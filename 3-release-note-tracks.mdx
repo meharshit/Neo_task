@@ -1,0 +1,123 @@
+---
+title: "[Month Year] release notes"
+description: "Tracks, the Tracks pill, and bulk start are new. Project settings and offline mode are enhanced, and moving a task to another project has changed."
+product: "Tasket"
+feature: "Tracks"
+contentType: "Release notes"
+audience: ["Members", "Admins", "Guests"]
+version: "[Version]"
+author: "Harshit Satyaseel"
+lastUpdated: "2026-10-06"
+readTime: "5 min"
+tag: "New"
+keywords: ["release notes", "what's new", "Tracks"]
+---
+
+**Version:** [Version]
+
+**Released:** [Release date]
+
+This release introduces Tracks, which lets one task move through several workstreams at the same time. It also enhances project settings and offline mode, and changes what happens when you move a task to another project.
+
+## What's new
+
+### Tracks
+
+Tracks lets one task sit in several workstreams at once, such as Spec, Design, Engineering, and QA.
+
+- Each workstream is a column on the project's new **Tracks** tab.
+- The task has its own <Tooltip tip="Where a task stands on one track: Not started, In Progress, or Done." cta="See the glossary" href="./glossary#track-status">track status</Tooltip> in each column: Not started, In Progress, or Done.
+- Marking a task Done in one column, such as Design, doesn't change its status in any other column.
+- When you complete or discard a task, it leaves the board but keeps its track statuses.
+- When you reopen a task, it returns to every column exactly as it was.
+
+**Why it matters:** A task that needs several teams stays as one task, with one comment thread, one set of <Tooltip tip="Neo's app for docs, spreadsheets, and diagrams." cta="See the glossary" href="./glossary#studio">Studio</Tooltip> documents, and one <Tooltip tip="Neo's AI assistant, co-worker, and agent platform. Every task has its own Friday chat." cta="See the glossary" href="./glossary#friday">Friday</Tooltip> chat. Each team sees its own queue, and teams can work in parallel instead of waiting for each other.
+
+<Warning>
+Deleting a track permanently removes its statuses from every task, including completed and discarded tasks.
+</Warning>
+
+Learn more in [Tracks overview](./1-tracks-overview) and [Run a task through several workstreams](./2-how-to-run-a-task-through-several-workstreams).
+
+### Tracks pill
+
+The <Tooltip tip="The control in a task's detail view that lists every track and the task's status on each one." cta="See the glossary" href="./glossary#tracks-pill">Tracks pill</Tooltip> lets you see and change a task's progress on every track, from the task itself.
+
+- The pill appears in the detail view of every task in a project that uses Tracks.
+- It lists every track in the project, with the task's status on each one.
+- It shows how many of the task's tracks are Done, for example, 2 out of 3.
+- You can start the task on a track, mark it Done, mark it Pending, or stop it, from the pill.
+
+**Why it matters:** You can check a task's full progress wherever you open it, including from **My Work** and **Updates**, without going to the board.
+
+Learn more in [Task progress in the Tracks pill](./1-tracks-overview#task-progress-in-the-tracks-pill).
+
+### Start several tasks on a track at once
+
+**Select** lets you start several tasks on one or more other tracks in a single action.
+
+- On the Tracks board, click **Select** on the tasks in a column, then choose the tracks to start them on.
+- You can select tasks from both the **In Progress** and **Done** sections of the column.
+- Any task that's already on a target track stays where it is, with its status unchanged.
+
+**Why it matters:** When a batch of work is ready for the next stage, for example, ten designs ready for engineering, you can move them together instead of one at a time.
+
+Learn more in [Start several tasks on the next track at once](./2-how-to-run-a-task-through-several-workstreams#optional-start-several-tasks-on-the-next-track-at-once).
+
+## What's enhanced
+
+### Project settings
+
+Project settings now include a **Tracks** switch, so each project can decide whether to use Tracks.
+
+- The switch is on the project's **Settings** tab.
+- Tracks is off by default for every project.
+- Any team member, including <Tooltip tip="People from outside your organization who are part of a team, with the same Tracks permissions as members." cta="See the glossary" href="./glossary#guest">guests</Tooltip>, can turn it on.
+- Only admins can turn it off.
+
+**Why it matters:** Projects that don't need Tracks stay exactly as they are. Turning Tracks off affects the whole project, so only admins can do it.
+
+<Warning>
+Turning off Tracks clears every track and track status in the project. If you turn it back on, the board starts empty.
+</Warning>
+
+Learn more in [Roles and access](./1-tracks-overview#roles-and-access).
+
+### Offline mode
+
+Offline mode now supports three Tracks actions, so you can keep a task's progress up to date without a connection.
+
+- Available offline: starting a task on a track, **Mark Done**, and **Mark Pending**.
+- Your changes are queued on your device and sync when you reconnect.
+- Still need a connection: adding, renaming, moving, or deleting a track, stopping a task on a track, and starting several tasks at once.
+
+**Why it matters:** Teams working in low-network areas can record progress on their tracks as they go.
+
+<Note>
+If someone deletes a track before your queued changes sync, the changes on that track are discarded without a notice.
+</Note>
+
+Learn more in [Offline availability](./1-tracks-overview#offline-availability).
+
+## What's changed
+
+### Moving a task to another project
+
+Moving a task to another project now clears its track statuses.
+
+- **Who's affected:** Anyone who moves a task that's on one or more tracks.
+- **What happens now:** The task arrives in the new project with no tracks started.
+- **Same-name tracks:** The task isn't placed on a track in the new project, even if a track there has the same name.
+- **What you need to do:** After you move the task, start it on the tracks it needs in its new project.
+
+**Why it matters:** Tracks belong to one project, so a task's progress on its tracks doesn't carry across. Moving a task partway through its workstreams means restarting it on the new project's tracks.
+
+Learn more in [How changes to tasks, tracks, and projects affect statuses](./1-tracks-overview#how-changes-to-tasks-tracks-and-projects-affect-statuses).
+
+## Deprecated
+
+Nothing is deprecated in this release.
+
+## Removed
+
+Nothing is removed in this release.

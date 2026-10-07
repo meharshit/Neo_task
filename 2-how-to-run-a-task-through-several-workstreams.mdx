@@ -1,0 +1,166 @@
+---
+title: "Run a task through several workstreams"
+description: "Set up tracks for a project, then take one task through them from start to finish."
+product: "Tasket"
+feature: "Tracks"
+contentType: "How-to"
+audience: ["Members", "Admins", "Guests"]
+version: "[Version]"
+author: "Harshit Satyaseel"
+lastUpdated: "2026-10-06"
+readTime: "7 min"
+tag: "New"
+keywords: ["add a track", "start a task on a track", "mark done", "Tracks pill"]
+---
+
+Tracks lets you move one task through several workstreams, such as Spec, Design, Engineering, QA, and Docs, with more than one workstream active at a time. This guide takes one task through the full flow: setting up the tracks, starting the task, moving it through each workstream, and completing it.
+
+To learn how Tracks works first, see [Tracks overview](./1-tracks-overview).
+
+## Before you begin
+
+- Make sure that you have access to the project and to the task.
+- Make sure that the task is open. You can't start a completed or discarded task on a track. If the task is closed, reopen it.
+- Make sure that you're online. Turning on Tracks and adding tracks aren't available offline.
+
+<Warning>
+Don't move the task to another project while it's on tracks. Moving a task to another project clears all of its track statuses, even if the other project has tracks with the same names.
+</Warning>
+
+## Turn on Tracks
+
+If the project already has a **Tracks** tab, skip to [Add a track for each workstream](#add-a-track-for-each-workstream).
+
+<Info>
+Tracks is off by default for every project. Any team member can turn it on, including guests. Only admins can turn it off.
+</Info>
+
+To turn on Tracks for the project, follow these steps:
+
+1. Open the project.
+1. Click the **Settings** tab.
+1. Turn on **Tracks**.
+
+The project now has a **Tracks** tab.
+
+## Add a track for each workstream
+
+Add one <Tooltip tip="A workstream in a project, such as Spec, Design, or QA, shown as a column on the Tracks board." cta="See the glossary" href="./glossary#track">track</Tooltip> for each workstream that the task passes through. If the tracks that you need already exist, skip to [Start the task on its first tracks](#start-the-task-on-its-first-tracks).
+
+To add a track, follow these steps:
+
+1. In the project, click the **Tracks** tab.
+1. Click **Add track**. To add the track at the end of the board, click the **Add track** button after the last column. To add the track between two existing tracks, click the **Add track** button between those columns.
+1. Enter a name for the track, for example, `Design`.
+1. Optional: Choose tasks to start on the new track.
+1. Save the track.
+
+Repeat these steps for each workstream. Each track appears as a column on the **Tracks** tab, and any tasks you chose appear in its **In Progress** section.
+
+<Note>
+Each track in a project must have a unique name. You can't add a track with a name that another track in the project already uses.
+</Note>
+
+## Start the task on its first tracks
+
+Start the task on every workstream that can begin now. Workstreams can run in parallel, so you don't need to wait for one to finish before you start the next. For example, start the sign-in redesign on Spec and on Design at the same time.
+
+To start the task on one or more tracks, follow these steps:
+
+1. Open the task.
+1. In the task details, click the <Tooltip tip="The control in a task's detail view that lists every track and the task's status on each one." cta="See the glossary" href="./glossary#tracks-pill">**Tracks** pill</Tooltip>.
+1. For each track that can begin now, click **Start**.
+
+The task appears in the **In Progress** section of each track that you started it on. If the task was already on a track, Tasket highlights its existing place on that track.
+
+<Tip>
+You can start a task on a track while you're offline. The change syncs when you reconnect.
+</Tip>
+
+## Mark the task Done on a finished track
+
+When a workstream finishes its part, mark the task Done on that track. Marking the task Done on one track doesn't change its status on any other track.
+
+To mark the task Done on a track, follow these steps:
+
+1. In the project, click the **Tracks** tab.
+1. In the column for the finished workstream, find the task in the **In Progress** section.
+1. Click **Mark Done**.
+
+The task moves to the **Done** section of that column, and the counter in the column header updates.
+
+<Note>
+If the workstream needs to reopen its work, for example, when QA finds an issue, find the task in the **Done** section and click **Mark Pending**. The task moves back to the **In Progress** section.
+</Note>
+
+## Start the task on the next tracks
+
+When the next workstream is ready, start the task on its track. For example, after Spec is Done, start the redesign on Engineering.
+
+To start the task on the next track, follow these steps:
+
+1. Open the task.
+1. Click the **Tracks** pill.
+1. Next to the track for the next workstream, click **Start**.
+
+The task appears in the **In Progress** section of that track.
+
+### Optional: Start several tasks on the next track at once
+
+If several tasks in a column are ready for the same next workstream, you can start them all in one action.
+
+To start several tasks on another track, follow these steps:
+
+1. In the **Tracks** tab, in the column for the current workstream, click **Select** on one of the tasks.
+1. Click each other task that you want to include. You can include tasks from the **In Progress** and **Done** sections.
+1. Choose the tracks to start the tasks on.
+1. Confirm.
+
+The tasks appear in the **In Progress** section of each track that you chose. Any task that was already on one of those tracks stays where it is, with its status unchanged.
+
+<Note>
+Starting several tasks at once needs a network connection. It isn't available offline.
+</Note>
+
+## Check the task's progress
+
+To see where the task stands on every workstream, follow these steps:
+
+1. Open the task from the project, from <Tooltip tip="A list of every task you're assigned to." cta="See the glossary" href="./glossary#my-work">**My Work**</Tooltip>, or from <Tooltip tip="A list of activity on the tasks you take part in." cta="See the glossary" href="./glossary#updates">**Updates**</Tooltip>.
+1. Click the **Tracks** pill.
+
+The pill lists every track in the project with the task's status on each track: Not started, In Progress, or Done. The pill also shows how many of the task's tracks are Done, for example, 3 out of 5.
+
+## Complete the task
+
+When all the work on the task is finished, complete the task in the same way as any other task.
+
+<Note>
+Tasket doesn't complete a task automatically when it's Done on every track. You can also complete a task that's still In Progress on some tracks.
+</Note>
+
+After you complete the task, it leaves every column on the Tracks board. Its track statuses are kept, and you can still see them in the Tracks pill. If you reopen the task, it returns to every column that it was on, with the same statuses.
+
+## Troubleshoot
+
+The following are common issues and how to resolve them.
+
+**The Tracks pill doesn't appear on the task.**
+Tracks is turned off for the task's project. To turn it on, see [Turn on Tracks](#turn-on-tracks).
+
+**The Start button doesn't appear in the Tracks pill.**
+The task is completed or discarded. Reopen the task, and then start it on the track.
+
+**I started the task on the wrong track.**
+If the task is In Progress on that track, click **Stop** on the task in that track's column. If the task is Done on that track, click **Mark Pending** first, and then click **Stop**. Stopping a task needs a network connection.
+
+**I can't add a track.**
+Check your connection, because adding a track isn't available offline. Then check that no other track in the project has the same name.
+
+**A change that I made offline is gone.**
+Someone deleted the track while you were offline. Changes on a deleted track are discarded when you reconnect.
+
+## Next steps
+
+- To learn what happens to the task's tracks when you rename, move, or delete a track, see [How changes to tasks, tracks, and projects affect statuses](./1-tracks-overview#how-changes-to-tasks-tracks-and-projects-affect-statuses).
+- To learn who can perform each Tracks action, see [Roles and access](./1-tracks-overview#roles-and-access).
